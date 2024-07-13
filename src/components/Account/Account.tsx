@@ -19,6 +19,7 @@ export const Account: React.FC<{ data: Connection }> = (props) => {
       </span>
 
       {isOpen && (
+        // @ts-ignore
         <code><pre style={{ maxWidth: '480px', wordWrap: 'anywhere', wordBreak: 'break-all', whiteSpace: 'break-spaces', padding: '8px', margin: '32px', border: '1px solid gray' }}>{ConnectionString}</pre ></code >
       )}
     </div>
