@@ -9,7 +9,7 @@ export default async function Home() {
       </div>
 
       <div>
-        Если вы хотите себе VPN, напишите <a href="https://t.me/a_goncharov_irlix">администратору в Telegram</a>.
+        Если вы хотите себе VPN, напишите <a href="https://t.me/kugichka">администратору в Telegram</a>.
       </div>
     </>
   );

@@ -11,11 +11,28 @@ export const Account: React.FC<{ data: Connection }> = (props) => {
     <div>
       <span>
         Аккаунт #{id};
-        <br />&nbsp;&nbsp;&nbsp;<a href={ConnectionString} style={{ display: 'inline-block', padding: '8px', margin: '2px 0', border: '1px solid gray' }}>
+        <br />&nbsp;&nbsp;&nbsp;
+        <a href={ConnectionString} style={{ display: 'inline-block', padding: '8px', margin: '2px 0', border: '1px solid gray' }}>
           Соединить
         </a>
 
-        <br />&nbsp;&nbsp;&nbsp;<a className="pseudo" onClick={() => setIsOpen(_ => !_)}>Показать строку-подключения</a >
+        <br />&nbsp;&nbsp;&nbsp;
+        <a
+          className="pseudo"
+          style={{ display: 'inline-block', padding: '8px', margin: '2px 0', border: '1px solid gray' }}
+          onClick={() => setIsOpen(_ => !_)}
+        >
+          Показать строку-подключения
+        </a >
+
+        <br />&nbsp;&nbsp;&nbsp;
+        <a
+          className="pseudo"
+          style={{ display: 'inline-block', padding: '8px', margin: '2px 0', border: '1px solid gray' }}
+          //
+        >
+          Занять аккаунт
+        </a >
       </span>
 
       {isOpen && (

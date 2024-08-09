@@ -68,6 +68,7 @@ export const Guide: React.FC<{ data: GuideEntity }> = (props) => {
 
   return (
     <div>
+      {/* <code><pre>{JSON.stringify(GuideContent, null, 2)}</pre></code> */}
       <p>{titleString} {triggerString}</p>
       {isOpen && content}
     </div>

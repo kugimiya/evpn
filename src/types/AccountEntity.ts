@@ -6,4 +6,5 @@ export type AccountEntity = {
 export type Connection = {
   id: number;
   ConnectionString: string;
+  isOccupied: boolean;
 };
